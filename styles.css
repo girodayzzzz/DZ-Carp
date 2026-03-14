@@ -1,51 +1,155 @@
+```css
 body{
-font-family: Arial;
 margin:0;
+font-family:Arial, Helvetica, sans-serif;
 background:#f4f4f4;
+color:#222;
 }
 
+/* HEADER */
+
 header{
-background:#1b4332;
+background:#0e2f1c;
+padding:15px 0;
+}
+
+.header-container{
+display:flex;
+align-items:center;
+justify-content:space-between;
+max-width:1100px;
+margin:auto;
+padding:0 20px;
+}
+
+.logo{
+height:60px;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+margin-left:20px;
+font-weight:bold;
+}
+
+nav a:hover{
+color:#8ecf9b;
+}
+
+
+/* HERO */
+
+.hero{
+background:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),
+url("https://images.unsplash.com/photo-1504274066651-8d31a536b11a");
+background-size:cover;
+background-position:center;
+color:white;
+text-align:center;
+padding:120px 20px;
+}
+
+.hero h1{
+font-size:48px;
+margin-bottom:10px;
+}
+
+.hero p{
+font-size:20px;
+margin-bottom:25px;
+}
+
+.btn{
+background:#2e7d32;
+color:white;
+border:none;
+padding:12px 25px;
+font-size:16px;
+cursor:pointer;
+border-radius:5px;
+}
+
+.btn:hover{
+background:#1b5e20;
+}
+
+
+/* SECTIONS */
+
+.section{
+padding:70px 20px;
+text-align:center;
+}
+
+.section h2{
+margin-bottom:40px;
+}
+
+.dark{
+background:#1b1b1b;
+color:white;
+}
+
+.center{
+max-width:700px;
+margin:auto;
+}
+
+
+/* CARDS */
+
+.cards{
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+gap:20px;
+}
+
+.card{
+background:white;
+padding:25px;
+border-radius:8px;
+width:260px;
+box-shadow:0 4px 10px rgba(0,0,0,0.1);
+}
+
+.dark .card{
+background:#2a2a2a;
+color:white;
+}
+
+
+/* FOOTER */
+
+footer{
+background:#0e2f1c;
 color:white;
 text-align:center;
 padding:30px;
 }
 
+
+/* MOBILE */
+
+@media(max-width:768px){
+
+.header-container{
+flex-direction:column;
+}
+
 nav{
-background:#081c15;
-padding:10px;
-text-align:center;
+margin-top:10px;
 }
 
-nav a{
-color:white;
-margin:15px;
-text-decoration:none;
-font-weight:bold;
+.cards{
+flex-direction:column;
+align-items:center;
 }
 
-.hero{
-background:#2d6a4f;
-color:white;
-text-align:center;
-padding:60px;
+.hero h1{
+font-size:32px;
 }
 
-section{
-padding:40px;
 }
-
-.card{
-background:white;
-padding:20px;
-margin:20px;
-border-radius:10px;
-box-shadow:0 3px 10px rgba(0,0,0,0.1);
-}
-
-footer{
-background:#081c15;
-color:white;
-text-align:center;
-padding:20px;
-}
+```
