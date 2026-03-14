@@ -1,3 +1,4 @@
+```html
 <!DOCTYPE html>
 <html lang="en">
 
@@ -6,14 +7,13 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>DZ Carp – Carp Fishing Gear, Tips & Tutorials</title>
+<title>DZ Carp – Carp Fishing Gear, Rigs & Tips</title>
 
-<meta name="description" content="DZ Carp is your ultimate carp fishing resource for gear reviews, bait guides, rigs tutorials and fishing tips.">
+<meta name="description" content="DZ Carp – carp fishing gear reviews, bait guides, carp rigs and fishing tips for anglers.">
 
 <link rel="stylesheet" href="style.css">
 <link rel="icon" href="images/logo.png">
 
-<!-- Google Fonts -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
@@ -25,32 +25,24 @@
 <body>
 
 
+<!-- ================= HEADER ================= -->
 
-<!-- ===================== NAVIGATION ===================== -->
+<header class="header">
 
-<nav class="navbar" id="navbar">
+<div class="container nav-container">
 
-<div class="nav-container">
+<a href="index.html" class="logo">
 
-<a href="index.html" class="nav-logo">
-
-<img src="images/logo.png" alt="DZ Carp Logo" class="logo-img">
+<img src="images/logo.png" alt="DZ Carp Logo">
 
 </a>
 
 
-<button class="hamburger" id="hamburger" aria-label="Toggle navigation">
+<nav class="nav" id="nav-menu">
 
-<span></span>
-<span></span>
-<span></span>
+<ul class="nav-list">
 
-</button>
-
-
-<ul class="nav-links" id="nav-links">
-
-<li><a href="index.html" class="nav-link active">Home</a></li>
+<li><a href="#home" class="nav-link active">Home</a></li>
 <li><a href="#gear" class="nav-link">Gear</a></li>
 <li><a href="#baits" class="nav-link">Baits</a></li>
 <li><a href="#tips" class="nav-link">Tips</a></li>
@@ -59,13 +51,24 @@
 
 </ul>
 
-</div>
-
 </nav>
 
 
+<div class="hamburger" id="hamburger">
 
-<!-- ===================== HERO ===================== -->
+<span></span>
+<span></span>
+<span></span>
+
+</div>
+
+</div>
+
+</header>
+
+
+
+<!-- ================= HERO ================= -->
 
 <section class="hero" id="home">
 
@@ -73,58 +76,37 @@
 
 <div class="hero-content">
 
-<p class="hero-eyebrow">Welcome to</p>
+<h1>Catch Bigger Carp</h1>
 
-<h1 class="hero-title">DZ Carp</h1>
+<p>
 
-<p class="hero-subtitle">
-
-Carp Fishing Gear, Tips and Reviews
-
-</p>
-
-<p class="hero-description">
-
-Your ultimate guide to landing bigger carp. Discover gear reviews,
-rig tutorials, bait strategies and real fishing experiences.
+Carp fishing gear reviews, bait strategies and proven rigs
+to help you land bigger fish.
 
 </p>
-
 
 <div class="hero-buttons">
 
 <a href="#gear" class="btn btn-primary">Explore Gear</a>
-<a href="#tips" class="btn btn-outline">Fishing Tips</a>
+<a href="#tips" class="btn btn-secondary">Fishing Tips</a>
 
 </div>
-
-
 
 <div class="hero-stats">
 
 <div class="stat">
-
-<span class="stat-number">50+</span>
-<span class="stat-label">Gear Reviews</span>
-
+<h3>50+</h3>
+<p>Gear Reviews</p>
 </div>
 
-<div class="stat-divider"></div>
-
 <div class="stat">
-
-<span class="stat-number">100+</span>
-<span class="stat-label">Fishing Tips</span>
-
+<h3>100+</h3>
+<p>Fishing Tips</p>
 </div>
 
-<div class="stat-divider"></div>
-
 <div class="stat">
-
-<span class="stat-number">200+</span>
-<span class="stat-label">Carp Caught</span>
-
+<h3>200+</h3>
+<p>Carp Caught</p>
 </div>
 
 </div>
@@ -135,103 +117,60 @@ rig tutorials, bait strategies and real fishing experiences.
 
 
 
-<!-- ===================== GEAR SECTION ===================== -->
+<!-- ================= GEAR ================= -->
 
 <section class="section" id="gear">
 
 <div class="container">
 
-<div class="section-header">
-
-<p class="section-eyebrow">Equipment</p>
-
 <h2 class="section-title">Carp Fishing Gear</h2>
 
 <p class="section-subtitle">
 
-Reviews and guides for rods, reels, alarms and carp fishing equipment.
+Discover rods, reels and equipment trusted by carp anglers.
 
 </p>
 
-</div>
 
+<div class="card-grid">
 
+<div class="card">
 
-<div class="gear-grid">
-
-
-
-<div class="gear-card">
-
-<div class="gear-card-img">
-
-<img src="images/rod.jpg" alt="Carp Fishing Rod">
-
-</div>
-
-<div class="gear-card-body">
-
-<span class="gear-tag">Rods</span>
+<img src="images/rod.jpg" alt="Carp Rod">
 
 <h3>Carp Rods</h3>
 
-<p>Distance casting rods designed for power and precision.</p>
+<p>Distance casting rods built for power and control.</p>
 
-<a href="#" class="btn btn-sm">Read Reviews</a>
-
-</div>
+<a href="#" class="card-link">Read More →</a>
 
 </div>
 
 
+<div class="card">
 
-<div class="gear-card">
-
-<div class="gear-card-img">
-
-<img src="images/reel.jpg" alt="Carp Fishing Reel">
-
-</div>
-
-<div class="gear-card-body">
-
-<span class="gear-tag">Reels</span>
+<img src="images/reel.jpg" alt="Carp Reel">
 
 <h3>Carp Reels</h3>
 
-<p>Big pit reels and freespool reels designed for carp fishing.</p>
+<p>Reliable reels designed for big carp battles.</p>
 
-<a href="#" class="btn btn-sm">Read Reviews</a>
-
-</div>
+<a href="#" class="card-link">Read More →</a>
 
 </div>
 
 
-
-<div class="gear-card">
-
-<div class="gear-card-img">
+<div class="card">
 
 <img src="images/alarm.jpg" alt="Bite Alarm">
 
-</div>
-
-<div class="gear-card-body">
-
-<span class="gear-tag">Alarms</span>
-
 <h3>Bite Alarms</h3>
 
-<p>Modern alarms that help detect every carp take instantly.</p>
+<p>Modern alarms that detect every carp run instantly.</p>
 
-<a href="#" class="btn btn-sm">Read Reviews</a>
-
-</div>
+<a href="#" class="card-link">Read More →</a>
 
 </div>
-
-
 
 </div>
 
@@ -241,23 +180,49 @@ Reviews and guides for rods, reels, alarms and carp fishing equipment.
 
 
 
-<!-- ===================== BAITS ===================== -->
+<!-- ================= BAITS ================= -->
 
 <section class="section section-dark" id="baits">
 
 <div class="container">
 
-<div class="section-header">
-
-<p class="section-eyebrow">Attraction</p>
-
 <h2 class="section-title">Baits & Boilies</h2>
 
 <p class="section-subtitle">
 
-Discover which carp baits and boilies attract the biggest fish.
+Choosing the right bait can make the difference between
+blank sessions and landing big carp.
 
 </p>
+
+
+<div class="card-grid">
+
+<div class="card">
+
+<h3>Boilies</h3>
+
+<p>The most popular carp bait used by anglers worldwide.</p>
+
+</div>
+
+
+<div class="card">
+
+<h3>Pellets</h3>
+
+<p>High protein pellets perfect for attracting carp.</p>
+
+</div>
+
+
+<div class="card">
+
+<h3>Particles</h3>
+
+<p>Tiger nuts, maize and hemp that carp love.</p>
+
+</div>
 
 </div>
 
@@ -267,23 +232,48 @@ Discover which carp baits and boilies attract the biggest fish.
 
 
 
-<!-- ===================== TIPS ===================== -->
+<!-- ================= TIPS ================= -->
 
 <section class="section" id="tips">
 
 <div class="container">
 
-<div class="section-header">
-
-<p class="section-eyebrow">Knowledge</p>
-
-<h2 class="section-title">Carp Fishing Tips</h2>
+<h2 class="section-title">Fishing Tips</h2>
 
 <p class="section-subtitle">
 
-Learn proven strategies that help anglers catch more carp.
+Learn proven carp fishing strategies used by experienced anglers.
 
 </p>
+
+
+<div class="card-grid">
+
+<div class="card">
+
+<h3>Find Carp Faster</h3>
+
+<p>Locate feeding areas in lakes and rivers.</p>
+
+</div>
+
+
+<div class="card">
+
+<h3>Baiting Strategy</h3>
+
+<p>Use smart baiting techniques to attract bigger carp.</p>
+
+</div>
+
+
+<div class="card">
+
+<h3>Seasonal Fishing</h3>
+
+<p>Adjust your carp tactics for every season.</p>
+
+</div>
 
 </div>
 
@@ -293,23 +283,29 @@ Learn proven strategies that help anglers catch more carp.
 
 
 
-<!-- ===================== GALLERY ===================== -->
+<!-- ================= GALLERY ================= -->
 
 <section class="section section-dark" id="gallery">
 
 <div class="container">
 
-<div class="section-header">
-
-<p class="section-eyebrow">Catches</p>
-
-<h2 class="section-title">Carp Gallery</h2>
+<h2 class="section-title">Recent Carp Catches</h2>
 
 <p class="section-subtitle">
 
-Photos from real carp fishing sessions.
+Photos from real fishing sessions.
 
 </p>
+
+
+<div class="gallery-grid">
+
+<img src="images/carp1.jpg" alt="Carp Catch">
+<img src="images/carp2.jpg" alt="Carp Catch">
+<img src="images/carp3.jpg" alt="Carp Catch">
+<img src="images/carp4.jpg" alt="Carp Catch">
+<img src="images/carp5.jpg" alt="Carp Catch">
+<img src="images/carp6.jpg" alt="Carp Catch">
 
 </div>
 
@@ -319,25 +315,37 @@ Photos from real carp fishing sessions.
 
 
 
-<!-- ===================== CONTACT ===================== -->
+<!-- ================= CONTACT ================= -->
 
 <section class="section" id="contact">
 
 <div class="container">
 
-<div class="section-header">
-
-<p class="section-eyebrow">Contact</p>
-
-<h2 class="section-title">Get In Touch</h2>
+<h2 class="section-title">Contact</h2>
 
 <p class="section-subtitle">
 
-Questions, fishing stories or gear requests? Send us a message.
+Questions, fishing stories or gear recommendations?
+Get in touch.
 
 </p>
 
-</div>
+
+<form class="contact-form">
+
+<input type="text" placeholder="Your Name" required>
+
+<input type="email" placeholder="Email Address" required>
+
+<textarea placeholder="Your Message"></textarea>
+
+<button type="submit" class="btn btn-primary">
+
+Send Message
+
+</button>
+
+</form>
 
 </div>
 
@@ -345,19 +353,61 @@ Questions, fishing stories or gear requests? Send us a message.
 
 
 
-<!-- ===================== FOOTER ===================== -->
+<!-- ================= FOOTER ================= -->
 
 <footer class="footer">
 
-<div class="container footer-content">
+<div class="container footer-grid">
+
+<div class="footer-brand">
+
+<img src="images/logo.png" alt="DZ Carp Logo">
+
+<p>
+
+Carp fishing gear reviews, bait guides and fishing tips.
+
+</p>
+
+</div>
+
+
+<div class="footer-links">
+
+<h4>Explore</h4>
+
+<a href="#gear">Gear</a>
+<a href="#baits">Baits</a>
+<a href="#tips">Tips</a>
+<a href="#gallery">Gallery</a>
+
+</div>
+
+
+<div class="footer-links">
+
+<h4>Community</h4>
+
+<a href="#">Instagram</a>
+<a href="#">YouTube</a>
+<a href="#">Facebook</a>
+
+</div>
+
+</div>
+
+
+<div class="footer-bottom">
 
 <p>© 2026 DZ Carp</p>
-
-<p>Carp Fishing • Gear • Tips</p>
 
 </div>
 
 </footer>
+
+
+
+<button id="backToTop">↑</button>
 
 
 
