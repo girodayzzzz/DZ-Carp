@@ -1,8 +1,6 @@
-/* ============================================================
-   DZ Carp — Clean Professional Fishing Website Styles
-   ============================================================ */
-
-/* RESET */
+/* ======================================================
+   DZ Carp — Modern Light Fishing Website
+   ====================================================== */
 
 *{
 margin:0;
@@ -12,8 +10,8 @@ box-sizing:border-box;
 
 body{
 font-family:'Open Sans',sans-serif;
-background:#0e1411;
-color:#e6e6e6;
+background:#ffffff;
+color:#222;
 line-height:1.6;
 }
 
@@ -27,13 +25,13 @@ margin:auto;
 }
 
 
-/* ============================================================
-   HEADER / NAVBAR
-   ============================================================ */
+/* ======================================================
+   HEADER
+   ====================================================== */
 
 .header{
-background:#0e1411;
-border-bottom:1px solid #1b2420;
+background:#ffffff;
+border-bottom:1px solid #e6e6e6;
 position:sticky;
 top:0;
 z-index:1000;
@@ -41,16 +39,17 @@ z-index:1000;
 
 .nav-container{
 display:flex;
-justify-content:space-between;
 align-items:center;
+justify-content:space-between;
 height:70px;
 }
 
 .logo img{
-height:40px;
+height:42px;
 }
 
-/* NAV MENU */
+
+/* NAVIGATION */
 
 .nav-menu ul{
 display:flex;
@@ -60,27 +59,26 @@ list-style:none;
 
 .nav-menu a{
 text-decoration:none;
-color:#cfd8d3;
+color:#333;
 font-weight:500;
 transition:.3s;
 }
 
 .nav-menu a:hover{
-color:#8edb6b;
+color:#2e7d32;
 }
 
 .nav-cta{
-background:#8edb6b;
-color:#0e1411;
-padding:6px 14px;
+background:#2e7d32;
+color:white;
+padding:7px 16px;
 border-radius:6px;
-font-weight:600;
 }
 
 
-/* ============================================================
+/* ======================================================
    HERO
-   ============================================================ */
+   ====================================================== */
 
 .hero{
 min-height:90vh;
@@ -90,11 +88,12 @@ justify-content:center;
 text-align:center;
 
 background:
-linear-gradient(rgba(0,0,0,.75),rgba(0,0,0,.9)),
+linear-gradient(rgba(0,0,0,.55),rgba(0,0,0,.75)),
 url("images/hero.jpg");
 
 background-size:cover;
 background-position:center;
+color:white;
 }
 
 .hero-inner{
@@ -103,16 +102,19 @@ max-width:650px;
 
 .hero h1{
 font-family:'Oswald',sans-serif;
-font-size:70px;
-margin-bottom:10px;
+font-size:72px;
 letter-spacing:2px;
+margin-bottom:10px;
 }
 
 .hero-text{
-color:#cfd8d3;
 margin:20px auto;
-font-size:17px;
+font-size:18px;
+color:#e8e8e8;
 }
+
+
+/* BUTTONS */
 
 .hero-buttons{
 margin-top:25px;
@@ -122,13 +124,10 @@ gap:15px;
 flex-wrap:wrap;
 }
 
-
-/* BUTTONS */
-
 .btn-primary{
-background:#8edb6b;
-color:#0e1411;
-padding:12px 22px;
+background:#2e7d32;
+color:white;
+padding:12px 24px;
 border-radius:6px;
 text-decoration:none;
 font-weight:600;
@@ -136,70 +135,70 @@ transition:.3s;
 }
 
 .btn-primary:hover{
-background:#78c25a;
+background:#1b5e20;
 }
 
 .btn-outline{
-border:1px solid #8edb6b;
-padding:12px 22px;
+border:2px solid white;
+color:white;
+padding:12px 24px;
 border-radius:6px;
 text-decoration:none;
-color:#8edb6b;
-font-weight:600;
 }
 
 .btn-outline:hover{
-background:#8edb6b;
-color:#0e1411;
+background:white;
+color:#111;
 }
 
 
-/* ============================================================
+/* ======================================================
    SECTIONS
-   ============================================================ */
+   ====================================================== */
 
 .section{
 padding:100px 0;
+background:#ffffff;
 }
 
 .section-title{
 text-align:center;
 font-family:'Oswald',sans-serif;
 font-size:38px;
-margin-bottom:40px;
+margin-bottom:50px;
 }
 
 .dark{
-background:#111a15;
+background:#f6f6f6;
 }
 
 
-/* ============================================================
-   GRID LAYOUT
-   ============================================================ */
+/* ======================================================
+   GRID
+   ====================================================== */
 
 .grid{
 display:grid;
 grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
-gap:25px;
+gap:30px;
 }
 
 
-/* ============================================================
+/* ======================================================
    CARDS
-   ============================================================ */
+   ====================================================== */
 
 .card{
-background:#16211b;
+background:white;
 padding:25px;
 border-radius:8px;
-border:1px solid #1b2420;
+border:1px solid #e6e6e6;
 transition:.3s;
 }
 
 .card:hover{
 transform:translateY(-6px);
-border-color:#8edb6b;
+box-shadow:0 10px 25px rgba(0,0,0,.08);
 }
 
 .card img{
@@ -209,33 +208,32 @@ margin-bottom:12px;
 }
 
 .card h3{
-margin-bottom:8px;
+margin-bottom:10px;
 font-size:20px;
 }
 
 .card p{
-color:#a5b3ac;
+color:#555;
 font-size:15px;
 }
 
 
-/* ============================================================
+/* ======================================================
    GALLERY
-   ============================================================ */
+   ====================================================== */
 
 .gallery{
 display:grid;
-grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
-gap:10px;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:12px;
 }
 
 .gallery img{
 width:100%;
-height:200px;
+height:210px;
 object-fit:cover;
 border-radius:6px;
 transition:.3s;
-cursor:pointer;
 }
 
 .gallery img:hover{
@@ -243,25 +241,24 @@ transform:scale(1.05);
 }
 
 
-/* ============================================================
+/* ======================================================
    CONTACT
-   ============================================================ */
+   ====================================================== */
 
 .contact form{
 max-width:500px;
 margin:auto;
 display:flex;
 flex-direction:column;
-gap:14px;
+gap:15px;
 }
 
 .contact input,
 .contact textarea{
 padding:12px;
 border-radius:6px;
-border:1px solid #1b2420;
-background:#16211b;
-color:#fff;
+border:1px solid #ddd;
+font-size:14px;
 }
 
 .contact textarea{
@@ -269,12 +266,13 @@ resize:none;
 }
 
 
-/* ============================================================
+/* ======================================================
    FOOTER
-   ============================================================ */
+   ====================================================== */
 
 .footer{
-background:#0a0f0c;
+background:#111;
+color:#ccc;
 padding:60px 0 20px;
 }
 
@@ -285,45 +283,43 @@ flex-wrap:wrap;
 gap:40px;
 }
 
-.footer-brand img{
+.footer img{
 height:40px;
-margin-bottom:12px;
+margin-bottom:10px;
 }
 
 .footer a{
 display:block;
-color:#cfd8d3;
+color:#bbb;
 text-decoration:none;
 margin-bottom:6px;
-transition:.3s;
 }
 
 .footer a:hover{
-color:#8edb6b;
+color:white;
 }
 
 .copyright{
 text-align:center;
 margin-top:30px;
-color:#7c8b84;
+color:#888;
 font-size:14px;
 }
 
 
-/* ============================================================
+/* ======================================================
    RESPONSIVE
-   ============================================================ */
+   ====================================================== */
 
 @media(max-width:768px){
 
 .nav-menu ul{
 flex-direction:column;
 gap:15px;
-text-align:center;
 }
 
 .hero h1{
-font-size:44px;
+font-size:46px;
 }
 
 .section{
