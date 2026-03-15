@@ -1,4 +1,4 @@
-
+```html
 <!DOCTYPE html>
 <html lang="en">
 
@@ -7,9 +7,14 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>DZ Carp – Carp Fishing Gear, Rigs & Tips</title>
+<title>DZ Carp | Carp Fishing Gear, Rigs & Tips</title>
 
-<meta name="description" content="DZ Carp – carp fishing gear reviews, bait guides, carp rigs and fishing tips for anglers.">
+<meta name="description" content="DZ Carp – carp fishing gear reviews, bait guides, carp rigs and expert fishing tips for anglers who want to catch bigger carp.">
+
+<meta property="og:title" content="DZ Carp – Carp Fishing Gear & Tips">
+<meta property="og:description" content="Learn carp rigs, bait strategies and fishing techniques to catch bigger carp.">
+<meta property="og:image" content="images/logo.png">
+<meta property="og:type" content="website">
 
 <link rel="stylesheet" href="style.css">
 <link rel="icon" href="images/logo.png">
@@ -21,24 +26,23 @@
 
 </head>
 
-
 <body>
 
 
-<!-- ================= HEADER ================= -->
 
-<header class="header">
+<!-- ===================================================== -->
+<!-- HEADER / NAVBAR -->
+<!-- ===================================================== -->
+
+<header class="navbar" id="navbar">
 
 <div class="container nav-container">
 
-<a href="index.html" class="logo">
-
-<img src="images/logo.png" alt="DZ Carp Logo">
-
+<a href="index.html" class="nav-logo">
+<img src="images/logo.png" alt="DZ Carp Logo" class="logo-img">
 </a>
 
-
-<nav class="nav" id="nav-menu">
+<nav class="nav-menu" id="nav-menu">
 
 <ul class="nav-list">
 
@@ -53,14 +57,11 @@
 
 </nav>
 
-
-<div class="hamburger" id="hamburger">
-
+<button class="hamburger" id="hamburger" aria-label="Open menu">
 <span></span>
 <span></span>
 <span></span>
-
-</div>
+</button>
 
 </div>
 
@@ -68,17 +69,19 @@
 
 
 
-<!-- ================= HERO ================= -->
+<!-- ===================================================== -->
+<!-- HERO SECTION -->
+<!-- ===================================================== -->
 
 <section class="hero" id="home">
 
 <div class="hero-overlay"></div>
 
-<div class="hero-content">
+<div class="hero-content container">
 
-<h1>Catch Bigger Carp</h1>
+<h1 class="hero-title">Catch Bigger Carp</h1>
 
-<p>
+<p class="hero-description">
 
 Carp fishing gear reviews, bait strategies and proven rigs
 to help you land bigger fish.
@@ -88,25 +91,25 @@ to help you land bigger fish.
 <div class="hero-buttons">
 
 <a href="#gear" class="btn btn-primary">Explore Gear</a>
-<a href="#tips" class="btn btn-secondary">Fishing Tips</a>
+<a href="#tips" class="btn btn-outline">Fishing Tips</a>
 
 </div>
 
 <div class="hero-stats">
 
 <div class="stat">
-<h3>50+</h3>
-<p>Gear Reviews</p>
+<span class="stat-number">50+</span>
+<span class="stat-label">Gear Reviews</span>
 </div>
 
 <div class="stat">
-<h3>100+</h3>
-<p>Fishing Tips</p>
+<span class="stat-number">100+</span>
+<span class="stat-label">Fishing Tips</span>
 </div>
 
 <div class="stat">
-<h3>200+</h3>
-<p>Carp Caught</p>
+<span class="stat-number">200+</span>
+<span class="stat-label">Carp Caught</span>
 </div>
 
 </div>
@@ -117,26 +120,29 @@ to help you land bigger fish.
 
 
 
-<!-- ================= GEAR ================= -->
+<!-- ===================================================== -->
+<!-- GEAR SECTION -->
+<!-- ===================================================== -->
 
 <section class="section" id="gear">
 
 <div class="container">
 
+<header class="section-header">
+
 <h2 class="section-title">Carp Fishing Gear</h2>
 
 <p class="section-subtitle">
-
 Discover rods, reels and equipment trusted by carp anglers.
-
 </p>
 
+</header>
 
 <div class="card-grid">
 
-<div class="card">
+<article class="card">
 
-<img src="images/rod.jpg" alt="Carp Rod">
+<img src="images/rod.jpg" alt="Carp Fishing Rod">
 
 <h3>Carp Rods</h3>
 
@@ -144,12 +150,12 @@ Discover rods, reels and equipment trusted by carp anglers.
 
 <a href="#" class="card-link">Read More →</a>
 
-</div>
+</article>
 
 
-<div class="card">
+<article class="card">
 
-<img src="images/reel.jpg" alt="Carp Reel">
+<img src="images/reel.jpg" alt="Carp Fishing Reel">
 
 <h3>Carp Reels</h3>
 
@@ -157,12 +163,12 @@ Discover rods, reels and equipment trusted by carp anglers.
 
 <a href="#" class="card-link">Read More →</a>
 
-</div>
+</article>
 
 
-<div class="card">
+<article class="card">
 
-<img src="images/alarm.jpg" alt="Bite Alarm">
+<img src="images/alarm.jpg" alt="Carp Bite Alarm">
 
 <h3>Bite Alarms</h3>
 
@@ -170,7 +176,7 @@ Discover rods, reels and equipment trusted by carp anglers.
 
 <a href="#" class="card-link">Read More →</a>
 
-</div>
+</article>
 
 </div>
 
@@ -180,11 +186,15 @@ Discover rods, reels and equipment trusted by carp anglers.
 
 
 
-<!-- ================= BAITS ================= -->
+<!-- ===================================================== -->
+<!-- BAITS -->
+<!-- ===================================================== -->
 
 <section class="section section-dark" id="baits">
 
 <div class="container">
+
+<header class="section-header">
 
 <h2 class="section-title">Baits & Boilies</h2>
 
@@ -195,6 +205,7 @@ blank sessions and landing big carp.
 
 </p>
 
+</header>
 
 <div class="card-grid">
 
@@ -206,7 +217,6 @@ blank sessions and landing big carp.
 
 </div>
 
-
 <div class="card">
 
 <h3>Pellets</h3>
@@ -214,7 +224,6 @@ blank sessions and landing big carp.
 <p>High protein pellets perfect for attracting carp.</p>
 
 </div>
-
 
 <div class="card">
 
@@ -232,11 +241,15 @@ blank sessions and landing big carp.
 
 
 
-<!-- ================= TIPS ================= -->
+<!-- ===================================================== -->
+<!-- TIPS -->
+<!-- ===================================================== -->
 
 <section class="section" id="tips">
 
 <div class="container">
+
+<header class="section-header">
 
 <h2 class="section-title">Fishing Tips</h2>
 
@@ -246,33 +259,23 @@ Learn proven carp fishing strategies used by experienced anglers.
 
 </p>
 
+</header>
 
 <div class="card-grid">
 
 <div class="card">
-
 <h3>Find Carp Faster</h3>
-
 <p>Locate feeding areas in lakes and rivers.</p>
-
 </div>
 
-
 <div class="card">
-
 <h3>Baiting Strategy</h3>
-
 <p>Use smart baiting techniques to attract bigger carp.</p>
-
 </div>
 
-
 <div class="card">
-
 <h3>Seasonal Fishing</h3>
-
-<p>Adjust your carp tactics for every season.</p>
-
+<p>Adjust your carp tactics depending on the season.</p>
 </div>
 
 </div>
@@ -283,11 +286,15 @@ Learn proven carp fishing strategies used by experienced anglers.
 
 
 
-<!-- ================= GALLERY ================= -->
+<!-- ===================================================== -->
+<!-- GALLERY -->
+<!-- ===================================================== -->
 
 <section class="section section-dark" id="gallery">
 
 <div class="container">
+
+<header class="section-header">
 
 <h2 class="section-title">Recent Carp Catches</h2>
 
@@ -297,6 +304,7 @@ Photos from real fishing sessions.
 
 </p>
 
+</header>
 
 <div class="gallery-grid">
 
@@ -315,35 +323,35 @@ Photos from real fishing sessions.
 
 
 
-<!-- ================= CONTACT ================= -->
+<!-- ===================================================== -->
+<!-- CONTACT -->
+<!-- ===================================================== -->
 
 <section class="section" id="contact">
 
 <div class="container">
+
+<header class="section-header">
 
 <h2 class="section-title">Contact</h2>
 
 <p class="section-subtitle">
 
 Questions, fishing stories or gear recommendations?
-Get in touch.
+Send us a message.
 
 </p>
 
+</header>
 
-<form class="contact-form">
+<form class="contact-form" id="contact-form">
 
 <input type="text" placeholder="Your Name" required>
-
 <input type="email" placeholder="Email Address" required>
 
-<textarea placeholder="Your Message"></textarea>
+<textarea rows="5" placeholder="Your Message"></textarea>
 
-<button type="submit" class="btn btn-primary">
-
-Send Message
-
-</button>
+<button type="submit" class="btn btn-primary">Send Message</button>
 
 </form>
 
@@ -353,11 +361,13 @@ Send Message
 
 
 
-<!-- ================= FOOTER ================= -->
+<!-- ===================================================== -->
+<!-- FOOTER -->
+<!-- ===================================================== -->
 
 <footer class="footer">
 
-<div class="container footer-grid">
+<div class="container footer-top">
 
 <div class="footer-brand">
 
@@ -365,12 +375,12 @@ Send Message
 
 <p>
 
-Carp fishing gear reviews, bait guides and fishing tips.
+Carp fishing gear reviews, bait guides and fishing tips
+for anglers across Europe.
 
 </p>
 
 </div>
-
 
 <div class="footer-links">
 
@@ -382,7 +392,6 @@ Carp fishing gear reviews, bait guides and fishing tips.
 <a href="#gallery">Gallery</a>
 
 </div>
-
 
 <div class="footer-links">
 
@@ -396,10 +405,9 @@ Carp fishing gear reviews, bait guides and fishing tips.
 
 </div>
 
-
 <div class="footer-bottom">
 
-<p>© 2026 DZ Carp</p>
+<p>© 2026 DZ Carp. All rights reserved.</p>
 
 </div>
 
@@ -407,12 +415,13 @@ Carp fishing gear reviews, bait guides and fishing tips.
 
 
 
-<button id="backToTop">↑</button>
+<button class="back-to-top" id="back-to-top">↑</button>
 
 
 
 <script src="script.js"></script>
 
 </body>
+
 </html>
 ```
