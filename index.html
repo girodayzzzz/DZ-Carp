@@ -21,22 +21,27 @@
 
 <body>
 
-
-<!-- HEADER -->
+<!-- ================= HEADER ================= -->
 
 <header class="header">
 
-<div class="container nav">
+<div class="container nav-container">
 
-<img src="images/logo.png" class="logo">
+<a href="index.html" class="logo">
+<img src="images/logo.png" alt="DZ Carp Logo">
+</a>
 
-<nav>
+<nav class="nav-menu">
 
-<a href="#home">Home</a>
-<a href="#gear">Gear</a>
-<a href="#tips">Tips</a>
-<a href="#gallery">Gallery</a>
-<a href="#contact" class="cta">Contact</a>
+<ul>
+
+<li><a href="#home">Home</a></li>
+<li><a href="#gear">Gear</a></li>
+<li><a href="#tips">Tips</a></li>
+<li><a href="#gallery">Gallery</a></li>
+<li><a href="#contact" class="nav-cta">Contact</a></li>
+
+</ul>
 
 </nav>
 
@@ -45,16 +50,19 @@
 </header>
 
 
+<!-- ================= MAIN ================= -->
+
+<main>
 
 <!-- HERO -->
 
 <section class="hero" id="home">
 
-<div class="container hero-content">
+<div class="container hero-inner">
 
 <h1>DZ Carp</h1>
 
-<p>
+<p class="hero-text">
 
 Carp fishing gear reviews, proven rigs and bait strategies
 to help you catch bigger carp.
@@ -63,7 +71,7 @@ to help you catch bigger carp.
 
 <div class="hero-buttons">
 
-<a href="#gear" class="btn">Explore Gear</a>
+<a href="#gear" class="btn-primary">Explore Gear</a>
 <a href="#tips" class="btn-outline">Fishing Tips</a>
 
 </div>
@@ -73,14 +81,13 @@ to help you catch bigger carp.
 </section>
 
 
-
 <!-- FEATURES -->
 
 <section class="section">
 
 <div class="container">
 
-<h2>Why Follow DZ Carp</h2>
+<h2 class="section-title">Why Follow DZ Carp</h2>
 
 <div class="grid">
 
@@ -115,20 +122,19 @@ to help you catch bigger carp.
 </section>
 
 
-
 <!-- GEAR -->
 
 <section class="section dark" id="gear">
 
 <div class="container">
 
-<h2>Carp Fishing Gear</h2>
+<h2 class="section-title">Carp Fishing Gear</h2>
 
 <div class="grid">
 
 <div class="card">
 
-<img src="images/rod.jpg">
+<img src="images/rod.jpg" alt="Carp Rod">
 
 <h3>Carp Rods</h3>
 
@@ -138,7 +144,7 @@ to help you catch bigger carp.
 
 <div class="card">
 
-<img src="images/reel.jpg">
+<img src="images/reel.jpg" alt="Carp Reel">
 
 <h3>Carp Reels</h3>
 
@@ -148,7 +154,7 @@ to help you catch bigger carp.
 
 <div class="card">
 
-<img src="images/alarm.jpg">
+<img src="images/alarm.jpg" alt="Bite Alarm">
 
 <h3>Bite Alarms</h3>
 
@@ -163,14 +169,13 @@ to help you catch bigger carp.
 </section>
 
 
-
 <!-- TIPS -->
 
 <section class="section" id="tips">
 
 <div class="container">
 
-<h2>Carp Fishing Tips</h2>
+<h2 class="section-title">Carp Fishing Tips</h2>
 
 <div class="grid">
 
@@ -205,30 +210,28 @@ to help you catch bigger carp.
 </section>
 
 
-
 <!-- GALLERY -->
 
 <section class="section dark" id="gallery">
 
 <div class="container">
 
-<h2>Recent Catches</h2>
+<h2 class="section-title">Recent Catches</h2>
 
 <div class="gallery">
 
-<img src="images/carp1.jpg">
-<img src="images/carp2.jpg">
-<img src="images/carp3.jpg">
-<img src="images/carp4.jpg">
-<img src="images/carp5.jpg">
-<img src="images/carp6.jpg">
+<img src="images/carp1.jpg" alt="Carp Catch">
+<img src="images/carp2.jpg" alt="Carp Catch">
+<img src="images/carp3.jpg" alt="Carp Catch">
+<img src="images/carp4.jpg" alt="Carp Catch">
+<img src="images/carp5.jpg" alt="Carp Catch">
+<img src="images/carp6.jpg" alt="Carp Catch">
 
 </div>
 
 </div>
 
 </section>
-
 
 
 <!-- CONTACT -->
@@ -237,17 +240,17 @@ to help you catch bigger carp.
 
 <div class="container contact">
 
-<h2>Contact</h2>
+<h2 class="section-title">Contact</h2>
 
 <form>
 
-<input type="text" placeholder="Your Name">
+<input type="text" placeholder="Your Name" required>
 
-<input type="email" placeholder="Email">
+<input type="email" placeholder="Email" required>
 
 <textarea placeholder="Message"></textarea>
 
-<button class="btn">Send Message</button>
+<button type="submit" class="btn-primary">Send Message</button>
 
 </form>
 
@@ -255,19 +258,24 @@ to help you catch bigger carp.
 
 </section>
 
+</main>
 
 
-<!-- FOOTER -->
+<!-- ================= FOOTER ================= -->
 
 <footer class="footer">
 
 <div class="container footer-grid">
 
-<div>
+<div class="footer-brand">
 
-<img src="images/logo.png" class="logo">
+<img src="images/logo.png" alt="DZ Carp Logo">
 
-<p>Carp fishing gear reviews and fishing tips.</p>
+<p>
+
+Carp fishing gear reviews, bait guides and fishing tips.
+
+</p>
 
 </div>
 
